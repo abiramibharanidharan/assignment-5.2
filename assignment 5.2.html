@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+      <head>
+            <title>  Assignmen 5.2
+            </title>
+             <script type="text/javascript">
+                   var x;
+                    /*create function to get the letter*/
+                   function check() { 
+                                       var x=document.getElementById("x").value;
+                                       var y=x.length;
+                                        /* check the letter null or more than one */
+                                        if(y==0 ||y>1)
+                                        {
+                                            
+                                          document.getElementById("label1").innerHTML = "Plz type valid letter";
+                                         }
+                                       /*using if condition to check the letter*/
+                                        else if(x=="a" || x=="e" || x=="i" || x=="o" || x=="u")
+                                        {
+                  				document.getElementById("label1").innerHTML = x +"  is vowel";
+                                            
+                                        }
+                                        else
+                                        {
+                   				document.getElementById("label1").innerHTML = x +"  is consonant";
+                                             
+                                         }
+                                     }
+              
+            </script>
+       </head>
+       <body>
+             <!- to give the input letter-->    
+            <input type="text" id="x"/><br/>
+              <!-to click the button to call function-->
+            <input type="button"  value="click" onclick="check()"/></br></br> 
+                
+		<label id="label1">Type the letter to check vowel or consonant</label>
+       </body>
+</html>
